@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2d864bfc.css",
-    "main.js": "/portfolio/static/js/main.a70c7fe5.js",
-    "static/js/453.b05d8aa5.chunk.js": "/portfolio/static/js/453.b05d8aa5.chunk.js",
-    "static/media/bg-light.png": "/portfolio/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock02.jpg": "/portfolio/static/media/mock02.f939c7e474199d275174.jpg",
-    "static/media/mock10.jpg": "/portfolio/static/media/mock10.7691a226f8c4d15dd367.jpg",
-    "static/media/mock01.jpg": "/portfolio/static/media/mock01.0c093aa33614ed1f5c74.jpg",
-    "static/media/mock03.jpg": "/portfolio/static/media/mock03.2d89bbcdf312d947dac8.jpg",
-    "static/media/mock06.jpg": "/portfolio/static/media/mock06.be770d628743c4f2f2fe.jpg",
-    "static/media/mock07.jpg": "/portfolio/static/media/mock07.cbb41ab18f256811cb97.jpg",
-    "static/media/mock05.jpg": "/portfolio/static/media/mock05.54453b57f908ec91a3af.jpg",
-    "static/media/profile.jpeg": "/portfolio/static/media/profile.7a4783269b08cc95852c.jpeg",
-    "static/media/mock09.jpg": "/portfolio/static/media/mock09.e6a08468b435a6271742.jpg",
-    "static/media/mock08.jpg": "/portfolio/static/media/mock08.b91926c572b792529b6f.jpg",
-    "static/media/mock04.jpg": "/portfolio/static/media/mock04.103cdde3540a10ff174a.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.2d864bfc.css.map": "/portfolio/static/css/main.2d864bfc.css.map",
-    "main.a70c7fe5.js.map": "/portfolio/static/js/main.a70c7fe5.js.map",
-    "453.b05d8aa5.chunk.js.map": "/portfolio/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/Portfolio_Imtiaz/static/css/main.e3ebb5ba.css",
+    "main.js": "/Portfolio_Imtiaz/static/js/main.203bac1b.js",
+    "static/js/453.b05d8aa5.chunk.js": "/Portfolio_Imtiaz/static/js/453.b05d8aa5.chunk.js",
+    "static/media/bg-light.png": "/Portfolio_Imtiaz/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/Portfolio_Imtiaz/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/mock02.jpg": "/Portfolio_Imtiaz/static/media/mock02.f939c7e474199d275174.jpg",
+    "static/media/mock10.jpg": "/Portfolio_Imtiaz/static/media/mock10.7691a226f8c4d15dd367.jpg",
+    "static/media/mock01.jpg": "/Portfolio_Imtiaz/static/media/mock01.0c093aa33614ed1f5c74.jpg",
+    "static/media/mock03.jpg": "/Portfolio_Imtiaz/static/media/mock03.2d89bbcdf312d947dac8.jpg",
+    "static/media/mock06.jpg": "/Portfolio_Imtiaz/static/media/mock06.be770d628743c4f2f2fe.jpg",
+    "static/media/mock07.jpg": "/Portfolio_Imtiaz/static/media/mock07.cbb41ab18f256811cb97.jpg",
+    "static/media/mock05.jpg": "/Portfolio_Imtiaz/static/media/mock05.54453b57f908ec91a3af.jpg",
+    "static/media/profile.jpeg": "/Portfolio_Imtiaz/static/media/profile.7a4783269b08cc95852c.jpeg",
+    "static/media/mock09.jpg": "/Portfolio_Imtiaz/static/media/mock09.e6a08468b435a6271742.jpg",
+    "static/media/mock08.jpg": "/Portfolio_Imtiaz/static/media/mock08.b91926c572b792529b6f.jpg",
+    "static/media/mock04.jpg": "/Portfolio_Imtiaz/static/media/mock04.103cdde3540a10ff174a.jpg",
+    "index.html": "/Portfolio_Imtiaz/index.html",
+    "main.e3ebb5ba.css.map": "/Portfolio_Imtiaz/static/css/main.e3ebb5ba.css.map",
+    "main.203bac1b.js.map": "/Portfolio_Imtiaz/static/js/main.203bac1b.js.map",
+    "453.b05d8aa5.chunk.js.map": "/Portfolio_Imtiaz/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d864bfc.css",
-    "static/js/main.a70c7fe5.js"
+    "static/css/main.e3ebb5ba.css",
+    "static/js/main.203bac1b.js"
   ]
 }

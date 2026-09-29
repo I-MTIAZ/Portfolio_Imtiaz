@@ -1,15 +1,15 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import '../assets/styles/Contact.scss';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import TextField from '@mui/material/TextField';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import "../assets/styles/Contact.scss";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
+import TextField from "@mui/material/TextField";
 
 function Contact() {
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
 
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
@@ -19,45 +19,45 @@ function Contact() {
 
   // Sanitizes input to remove potential HTML/script
   function sanitizeInput(input: string): string {
-    return input.replace(/<\/?[^>]+(>|$)/g, '');
+    return input.replace(/<\/?[^>]+(>|$)/g, "");
   }
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    setNameError(name === '');
-    setEmailError(email === '' || !email.includes('@'));
-    setMessageError(message === '');
+    setNameError(name === "");
+    setEmailError(email === "" || !email.includes("@"));
+    setMessageError(message === "");
 
-    if (name && email.includes('@') && message && form.current) {
+    if (name && email.includes("@") && message && form.current) {
       const sanitizedName = sanitizeInput(name);
       const sanitizedEmail = sanitizeInput(email);
       const sanitizedMessage = sanitizeInput(message);
 
       const templateParams = {
         from_name: sanitizedName,
-        reply_to: sanitizedEmail,  // user’s actual email goes here
+        reply_to: sanitizedEmail, // user’s actual email goes here
         message: sanitizedMessage,
       };
 
       emailjs
         .send(
-          'service_7muz1ir',       // Replace with your actual EmailJS service ID
-          'template_j0xw8wc',      // Replace with your actual EmailJS template ID
+          "service_7muz1ir", // Replace with your actual EmailJS service ID
+          "template_j0xw8wc", // Replace with your actual EmailJS template ID
           templateParams,
-          'PVmr_F7ec4-n1oeqr'    // Replace with your EmailJS public API key
+          "PVmr_F7ec4-n1oeqr" // Replace with your EmailJS public API key
         )
         .then(
           (response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Your message has been sent!');
-            setName('');
-            setEmail('');
-            setMessage('');
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Your message has been sent!");
+            setName("");
+            setEmail("");
+            setMessage("");
           },
           (error) => {
-            console.error('FAILED...', error);
-            alert('Failed to send message. Please try again.');
+            console.error("FAILED...", error);
+            alert("Failed to send message. Please try again.");
           }
         );
     }
@@ -68,7 +68,10 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <p>
+            Got a project waiting to be realized? Let's collaborate and make it
+            happen!
+          </p>
           <Box
             ref={form}
             component="form"
@@ -86,8 +89,8 @@ function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 error={nameError}
-                helperText={nameError ? 'Please enter your name' : ''}
-                className='bgColor'
+                helperText={nameError ? "Please enter your name" : ""}
+                className="bgColor"
               />
               <TextField
                 required
@@ -98,8 +101,10 @@ function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
-                helperText={emailError ? 'Please enter a valid email address' : ''}
-                className='bgColor'
+                helperText={
+                  emailError ? "Please enter a valid email address" : ""
+                }
+                className="bgColor"
               />
             </div>
             <TextField
@@ -113,13 +118,9 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               error={messageError}
-              helperText={messageError ? 'Please enter the message' : ''}
+              helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button
-              type="submit"
-              variant="contained"
-              endIcon={<SendIcon />}
-            >
+            <Button type="submit" variant="contained" endIcon={<SendIcon />}>
               Send
             </Button>
           </Box>

@@ -1,93 +1,120 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+import "@fortawesome/free-regular-svg-icons";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faMagnifyingGlass,faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
-import Chip from '@mui/material/Chip';
-import '../assets/styles/Expertise.scss';
+import {
+  faBrain,
+  faServer,
+  faPuzzlePiece,
+} from "@fortawesome/free-solid-svg-icons";
+
+import Chip from "@mui/material/Chip";
+import "../assets/styles/Expertise.scss";
 
 const labelsFirst = [
-    "React",
-    "JavaScript",
-    "HTML5",
-    "Tailwind CSS",
-    "React Native",
-    "Vite",
-    "Git",
-    "MySQL",
-    "MongoDB",
-    "Postman",
-    "Figma",
-    "NodeJs",
+  "Python",
+  "Scikit-learn",
+  "Pandas",
+  "NumPy",
+  "XGBoost",
+  "Jupyter",
 ];
 
 const labelsSecond = [
-    "Python",
-    "Power Bi",
-    "DAX",
-    "SQL",
-    "ETL",
-    "RLS",
-    "Pandas",
+  "FastAPI",
+  "Next.js",
+  "React",
+  "Tailwind CSS",
+  "Postman",
+  "Git",
+  "GitHub",
 ];
 
 const labelsThird = [
-    "C++",
-    "C",
-    "CodeForces",
-    "UVA Online Judge",
-    "VJudge",
-    "LeetCode",
-    "AtCoder",
+  "C++",
+  "C",
+  "Data Structures",
+  "Algorithms",
+  "CodeForces",
+  "UVA Online Judge",
+  "VJudge",
+  "LeetCode",
+  "AtCoder",
 ];
 
 function Expertise() {
-    return (
+  return (
     <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Mongo. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+      <div className="skills-container">
+        <h1>Expertise</h1>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faMagnifyingGlass}size="3x"/>
-                    <h3>Data Analytic</h3>
-                    <p>Once the data is collected,I use SQL, Python (Pandas), and Power BI to clean, analyze, and visualize data. With DAX, ETL pipelines, and ROS integration, I help turn raw data into clear, actionable insights.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+        <div className="skills-grid">
+          {/* Machine Learning & AI */}
+          <div className="skill">
+            <FontAwesomeIcon icon={faBrain} size="3x" />
 
-                <div className="skill">
-                   <FontAwesomeIcon icon={faPuzzlePiece} size="3x" />
-                    <h3>Competitive Programming</h3>
-                    <p>Solved 200+ problems using C++ on platforms like Codeforces and VJudge, sharpening problem-solving and algorithmic skills.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+            <h3>Machine Learning & AI</h3>
+
+            <p>
+              I develop practical machine learning solutions covering data
+              preparation, model development, evaluation, and predictive
+              modeling.
+            </p>
+
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+
+              {labelsFirst.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
             </div>
+          </div>
+
+          {/* ML Engineering & Deployment */}
+          <div className="skill">
+            <FontAwesomeIcon icon={faServer} size="3x" />
+
+            <h3>ML Engineering & Deployment</h3>
+
+            <p>
+              I turn trained ML models into usable applications by building
+              inference APIs, integrating them with web interfaces, and
+              deploying complete ML workflows.
+            </p>
+
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+
+              {labelsSecond.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
+
+          {/* Programming & Algorithms */}
+          <div className="skill">
+            <FontAwesomeIcon icon={faPuzzlePiece} size="3x" />
+
+            <h3>Programming & Algorithms</h3>
+
+            <p>
+              Strong programming foundations in C and C++ with experience
+              solving algorithmic problems and developing efficient solutions.
+            </p>
+
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+
+              {labelsThird.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    );
+  );
 }
 
 export default Expertise;

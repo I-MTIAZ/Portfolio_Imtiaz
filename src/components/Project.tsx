@@ -40,8 +40,8 @@ function Project() {
             </a>
           </div>
           <p>
-            Developed a responsive single-page website using Vite, Tailwind CSS,
-            and DaisyUI for a clean and modern UI design.
+            Delivery Risk AI is a machine learning project that predicts the
+            probability of delivery failure from delivery conditions.
           </p>
         </div>
         <div className="project">

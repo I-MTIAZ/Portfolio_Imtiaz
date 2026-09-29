@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio-template",
-  "homepage": "homepage": "https://i-mtiaz.github.io/Portfolio_Imtiaz/",
+  "homepage":"https://i-mtiaz.github.io/Portfolio_Imtiaz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
